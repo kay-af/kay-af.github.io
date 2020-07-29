@@ -49,6 +49,12 @@ class _CreativeViewState extends State<CreativeView>
   }
 
   @override
+  void dispose() {
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     super.build(context);
     return AnimatedBuilder(

@@ -69,6 +69,7 @@ flutter:
     # WebApps
     - assets/content/webapps/webapp_chat.png
     - assets/content/webapps/webapp_spacehero.png
+    - assets/content/webapps/web_color_tools.png
 
     # Softwares
     # AI Car
@@ -80,18 +81,28 @@ flutter:
     - assets/content/softwares/software_asphalt6.jpg
     - assets/content/softwares/software_asphalt7.jpg
     - assets/content/softwares/software_asphalt_video.mp4
+    - assets/content/softwares/software_asphalt.pptx
     # Bot
     - assets/content/softwares/software_bot1.jpg
+    - assets/content/softwares/software_bot2.png
+    - assets/content/softwares/software_bot3.png
     - assets/content/softwares/software_bot_video.mp4
     # Uni
     - assets/content/softwares/software_uni1.png
     - assets/content/softwares/software_uni2.png
     - assets/content/softwares/software_uni3.png
     - assets/content/softwares/software_uni4.png
+
     # Mobiles
     - assets/content/mobileapps/mobile_notes_icon.png
     - assets/content/mobileapps/mobile_notes_shot1.jpg
     - assets/content/mobileapps/mobile_notes_shot2.jpg
+    - assets/content/mobileapps/mobile_eyedropper_logo.png
+    - assets/content/mobileapps/mobile_eyedropper1.jpg
+    - assets/content/mobileapps/mobile_eyedropper2.jpg
+    - assets/content/mobileapps/mobile_eyedropper3.jpg
+    - assets/content/mobileapps/mobile_eyedropper4.jpg
+
     # Achievements
     - assets/content/achievements/ac_adv.jpg
     - assets/content/achievements/ac_c_program.jpg
