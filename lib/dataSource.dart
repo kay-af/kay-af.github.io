@@ -176,7 +176,8 @@ class WebAppPaths {
   static const String SPACE_HERO =
       "assets/content/webapps/webapp_spacehero.png";
   static const String CHAT = "assets/content/webapps/webapp_chat.png";
-  static const String COLOR_TOOlS = "assets/content/webapps/web_color_tools.png";
+  static const String COLOR_TOOlS =
+      "assets/content/webapps/web_color_tools.png";
 }
 
 class WebAppModel {
@@ -208,7 +209,8 @@ class WebAppModel {
     ),
     WebAppModel(
       title: "Color tools",
-      description: "Color tools API is a restful API for interacting with colors. API will be extended in the future. This app is created using Nodejs for the backend server and Python for API library. Currently hosted on Heroku. Visit the web page for API reference.",
+      description:
+          "Color tools API is a restful API for interacting with colors. API will be extended in the future. This app is created using Nodejs for the backend server and Python for API library. Currently hosted on Heroku. Visit the web page for API reference.",
       imagePath: WebAppPaths.COLOR_TOOlS,
       launchUrl: "http://color-tools.herokuapp.com/",
     )
@@ -235,6 +237,12 @@ class MobileAppPaths {
       "assets/content/mobileapps/mobile_eyedropper3.jpg";
   static const String EYEDROPPER4 =
       "assets/content/mobileapps/mobile_eyedropper4.jpg";
+
+  // APKs
+  static const String APK_NODE_EDITOR =
+      webURL + "assets/content/mobileapps/note_editor.apk";
+  static const String APK_EYEDROPPER =
+      webURL + "assets/content/mobileapps/mobile_eyedropper.apk";
 }
 
 class MobileAppModel {
@@ -261,19 +269,20 @@ class MobileAppModel {
         appIconPath: MobileAppPaths.NOTES_ICON,
         appWebpage: "https://www.github.com/kay-af/simple-note-editor/",
         appScreenshotPaths: [MobileAppPaths.NOTES1, MobileAppPaths.NOTES2],
-        downloadUrl: ""),
+        downloadUrl: MobileAppPaths.APK_NODE_EDITOR),
     MobileAppModel(
         appName: "Eyedropper",
         appIconPath: MobileAppPaths.EYEDROPPER_ICON,
-        appDescription: "Recently, I created a rest API based on the color lookup tool made I made previously in C#. I ported the tool to Python and created a REST API using NodeJs. I wanted to create an application that used this API so I came u with the idea of Eyedropper. Eyedropper is an android application (Open-source) which takes live camera input and picaks up the center pixel color and with the press of a button, fetches matched color names and codes from the API. It is useful for recognizing names of the colors. The source code is available on my github page",
-        downloadUrl: "",
+        appDescription:
+            "Recently, I created a rest API based on the color lookup tool made I made previously in C#. I ported the tool to Python and created a REST API using NodeJs. I wanted to create an application that used this API so I came u with the idea of Eyedropper. Eyedropper is an android application (Open-source) which takes live camera input and picaks up the center pixel color and with the press of a button, fetches matched color names and codes from the API. It is useful for recognizing names of the colors. The source code is available on my github page",
+        downloadUrl: MobileAppPaths.APK_EYEDROPPER,
         appWebpage: "https://www.github.com/kay-af/eye-dropper",
         appScreenshotPaths: [
           MobileAppPaths.EYEDROPPER1,
           MobileAppPaths.EYEDROPPER2,
           MobileAppPaths.EYEDROPPER3,
           MobileAppPaths.EYEDROPPER4,
-        ]), // TODO add data source
+        ]),
   ];
 }
 
@@ -792,6 +801,16 @@ class TimelineElement {
         date: DateTime(2020),
         icon: Entypo.trophy),
     TimelineElement(
+        title: "Color tools",
+        subtitle: "Created a web app (REST API) for interaction with colors",
+        date: DateTime(2020),
+        icon: Entypo.trophy),
+    TimelineElement(
+        title: "Eyedropper",
+        subtitle: "Using Color-tools' lookup API, created an android app that tells color names from camera input",
+        date: DateTime(2020),
+        icon: Entypo.trophy),
+    TimelineElement(
         title: "Portfolio",
         subtitle: "Created this web app in flutter",
         date: DateTime(2020),
@@ -804,34 +823,44 @@ class TimelineElement {
   ];
 }
 
-final String profilePicPath = "assets/images/profile_pic.jpg";
-final DateFormat defaultDateFormat = DateFormat.yMMMMd();
-final String webURL = "http://kay-af.github.io/portfolio/";
-
 // Softwares
 
 class SoftwarePaths {
   // VIDEOS
-  static const String VID_ASPHALT = "assets/content/softwares/software_asphalt_video.mp4";
-  static const String VID_BOT = "assets/content/softwares/software_bot_video.mp4";
+  static const String VID_ASPHALT =
+      "assets/content/softwares/software_asphalt_video.mp4";
+  static const String VID_BOT =
+      "assets/content/softwares/software_bot_video.mp4";
 
   // STATIC
-  static const String ASPHALT1 = "assets/content/softwares/software_asphalt1.jpg";
-  static const String ASPHALT2 = "assets/content/softwares/software_asphalt2.jpg";
-  static const String ASPHALT3 = "assets/content/softwares/software_asphalt3.jpg";
-  static const String ASPHALT4 = "assets/content/softwares/software_asphalt4.jpg";
-  static const String ASPHALT5 = "assets/content/softwares/software_asphalt5.jpg";
-  static const String ASPHALT6 = "assets/content/softwares/software_asphalt6.jpg";
-  static const String ASPHALT7 = "assets/content/softwares/software_asphalt7.jpg";
+  static const String ASPHALT1 =
+      "assets/content/softwares/software_asphalt1.jpg";
+  static const String ASPHALT2 =
+      "assets/content/softwares/software_asphalt2.jpg";
+  static const String ASPHALT3 =
+      "assets/content/softwares/software_asphalt3.jpg";
+  static const String ASPHALT4 =
+      "assets/content/softwares/software_asphalt4.jpg";
+  static const String ASPHALT5 =
+      "assets/content/softwares/software_asphalt5.jpg";
+  static const String ASPHALT6 =
+      "assets/content/softwares/software_asphalt6.jpg";
+  static const String ASPHALT7 =
+      "assets/content/softwares/software_asphalt7.jpg";
   static const String BOT1 = "assets/content/softwares/software_bot1.jpg";
-  
+
   static const String BOT2 = "assets/content/softwares/software_bot2.png";
   static const String BOT3 = "assets/content/softwares/software_bot3.png";
-  
+
   static const String UNI1 = "assets/content/softwares/software_uni1.png";
   static const String UNI2 = "assets/content/softwares/software_uni2.png";
   static const String UNI3 = "assets/content/softwares/software_uni3.png";
   static const String UNI4 = "assets/content/softwares/software_uni4.png";
 
-  static const String ASPHALT_PPTX = "assets/content/softwares/software_asphalt.pptx";
+  static const String ASPHALT_PPTX =
+      "assets/content/softwares/software_asphalt.pptx";
 }
+
+final String profilePicPath = "assets/images/profile_pic.jpg";
+final DateFormat defaultDateFormat = DateFormat.yMMMMd();
+const String webURL = "http://kay-af.github.io/portfolio/";

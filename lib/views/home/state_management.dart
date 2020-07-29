@@ -4,6 +4,7 @@ class HomeManager {
   
   final ScrollController drawerScrollController;
   int selectedPage;
+  bool drawerExpanded;
 
   HomeManager() : 
     this.drawerScrollController = ScrollController(),

@@ -102,6 +102,8 @@ flutter:
     - assets/content/mobileapps/mobile_eyedropper2.jpg
     - assets/content/mobileapps/mobile_eyedropper3.jpg
     - assets/content/mobileapps/mobile_eyedropper4.jpg
+    - assets/content/mobileapps/mobile_eyedropper.apk
+    - assets/content/mobileapps/mobile_note_editor.apk
 
     # Achievements
     - assets/content/achievements/ac_adv.jpg
