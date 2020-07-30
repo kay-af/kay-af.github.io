@@ -587,7 +587,7 @@ class AboutMe {
 
   static final List<String> aboutMeDescriptive = [
     "Hello! My name is ",
-    "Afridi Kayal.",
+    "Afridi Kayal. ",
     "I am a BTech. student currently pursuing my degree. I like to do ",
     "programming. ",
     "I am also fond of ",
@@ -632,11 +632,9 @@ class AboutMe {
     "Java. \n\n",
     "I have completed quite big ",
     "Unity 3D ",
-    "projects in the past. Take a look at softwares section for details of some. ",
-    "I am in an internship with ",
+    "projects in the past. Take a look at softwares section for details of some. I am in an internship with ",
     "ThinkXFactor ",
-    "where I am using Unity 3D to convert some 2D ML environments to 3D.\n\n",
-    "I developed interest in ",
+    "where I am using Unity 3D to convert some 2D ML environments to 3D.\n\nI developed interest in ",
     "Digital arts ",
     "back in school and tried small game engines like ",
     "3D Rad and Game maker studio",
