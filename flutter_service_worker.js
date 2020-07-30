@@ -81,11 +81,13 @@ const RESOURCES = {
 "/assets\packages\flutter_icons\fonts\SimpleLineIcons.ttf": "d2285965fe34b05465047401b8595dd0",
 "/assets\packages\flutter_icons\fonts\weathericons.ttf": "4618f0de2a818e7ad3fe880e0b74d04a",
 "/assets\packages\flutter_icons\fonts\Zocial.ttf": "5cdf883b18a5651a29a4d1ef276d2457",
-"/icons\Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"/icons\Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"/index.html": "11f1c4a56836fdfde026145d9bae9e0b",
+"/favicon.ico": "d19967e25e66d87a85d6752100462b83",
+"/icons\android-chrome-192x192.png": "950a8d86039dca33210ea23f5101f92c",
+"/icons\android-chrome-512x512.png": "b19f386046268628b8eeafb94a17ea9d",
+"/icons\apple-touch-icon.png": "549861ed8bde20f1737f2ee896c18abe",
+"/index.html": "58487513d482cbdb134f2063de7f3512",
 "/main.dart.js": "0df8568d793e6fba06e72eacbeebabce",
-"/manifest.json": "14e919b7b1dde549ab334b7ee3ce8412"
+"/manifest.json": "438bab04726486cfc33e45403aac2cb4"
 };
 
 self.addEventListener('activate', function (event) {
