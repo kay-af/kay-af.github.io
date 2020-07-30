@@ -240,9 +240,9 @@ class MobileAppPaths {
 
   // APKs
   static const String APK_NODE_EDITOR =
-      webURL + "assets/content/mobileapps/note_editor.apk";
+      downloadBasePath + "/assets/content/mobileapps/mobile_note_editor.apk";
   static const String APK_EYEDROPPER =
-      webURL + "assets/content/mobileapps/mobile_eyedropper.apk";
+      downloadBasePath + "/assets/content/mobileapps/mobile_eyedropper.apk";
 }
 
 class MobileAppModel {
@@ -892,4 +892,4 @@ class SoftwarePaths {
 
 final String profilePicPath = "assets/images/profile_pic.jpg";
 final DateFormat defaultDateFormat = DateFormat.yMMMMd();
-const String webURL = "http://kay-af.github.io/portfolio/";
+const String downloadBasePath = "http://kay-af.github.io/portfolio/assets";

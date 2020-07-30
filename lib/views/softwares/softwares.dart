@@ -214,4 +214,4 @@ var _softwareUniPaths = [
   SoftwarePaths.UNI4,
 ];
 
-var _pathToAsphaltPPT = webURL + "/${SoftwarePaths.ASPHALT_PPTX}";
+var _pathToAsphaltPPT = downloadBasePath + "/${SoftwarePaths.ASPHALT_PPTX}";
