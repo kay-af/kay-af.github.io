@@ -27,27 +27,19 @@ class CursorPointer extends StatefulWidget {
 
 class _CursorPointerState extends State<CursorPointer> {
 
-  bool _mouseOver = false;
-
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
       child: GestureDetector(
         onTap: () {
-          if(_mouseOver && widget.onPressed != null) widget.onPressed(); 
+          if(widget.onPressed != null) widget.onPressed(); 
         },
         child: widget.child),
       onEnter: (evt) {
         appContainer.style.cursor = "pointer";
-        setState(() {
-          _mouseOver = true;
-        });
         if (widget.onEnter != null) widget.onEnter(evt);
       },
       onExit: (evt) {
-        setState(() {
-          _mouseOver = false;
-        });
         appContainer.style.cursor = "default";
         if (widget.onExit != null) widget.onExit(evt);
       },
