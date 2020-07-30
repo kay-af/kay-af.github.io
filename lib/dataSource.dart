@@ -893,3 +893,4 @@ class SoftwarePaths {
 final String profilePicPath = "assets/images/profile_pic.jpg";
 final DateFormat defaultDateFormat = DateFormat.yMMMMd();
 const String downloadBasePath = "http://kay-af.github.io/portfolio/assets";
+final String mailToUrl = "https://mail.google.com?to=${AboutMe.email}&view=cm&body=Redirected%20from%20Portfolio";

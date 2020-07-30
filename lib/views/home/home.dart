@@ -252,4 +252,5 @@ var _socialMediaOptions = <SocialMediaOption>[
       title: "Github",
       icon: FontAwesome.github,
       url: "https://github.com/kay-af"),
+  SocialMediaOption(title: "Email", icon: Entypo.mail, url: mailToUrl),
 ];

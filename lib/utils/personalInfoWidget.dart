@@ -2,8 +2,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:portfolio/utils/app.dart';
 import 'package:portfolio/utils/flipFlopText.dart';
 import 'package:portfolio/utils/gridLoadingImage.dart';
+import 'package:portfolio/utils/urlHandler.dart';
 import '../dataSource.dart';
 import 'switcher.dart';
 
@@ -99,7 +101,13 @@ class _PersonalInfoWidgetState extends State<PersonalInfoWidget>
             value: AboutMe.nationality),
         _buildTablet(
             icon: Entypo.moon, label: "Religion", value: AboutMe.religion),
-        _buildTablet(icon: Entypo.mail, label: "Email", value: AboutMe.email),
+        _buildTablet(
+            icon: Entypo.mail,
+            label: "Email",
+            value: AboutMe.email,
+            onClick: () async {
+              await gotoUrl(mailToUrl);
+            }),
       ],
     );
   }
@@ -169,19 +177,31 @@ class _PersonalInfoWidgetState extends State<PersonalInfoWidget>
   Widget _buildTablet(
       {@required IconData icon,
       @required String label,
-      @required String value}) {
-    return Column(
+      @required String value,
+      Function() onClick}) {
+    var child = Column(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         Icon(icon),
         SizedBox(
           height: 10,
         ),
-        FlipFlopText(textList: ["$label: ", value]),
+        FlipFlopText(
+          textList: ["$label: ", value],
+          flopStyle: onClick != null
+              ? Theme.of(context).textTheme.subtitle.apply(color: Colors.purple)
+              : null,
+        ),
         SizedBox(
           height: 10,
         ),
       ],
+    );
+
+    if (onClick == null) return child;
+    return CursorPointer(
+      child: child,
+      onPressed: onClick,
     );
   }
 
