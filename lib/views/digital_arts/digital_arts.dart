@@ -41,7 +41,9 @@ class _DigitalArtsWidgetState extends State<DigitalArtsWidget> {
                     "Blender 3D ",
                     "which is ",
                     "Open-source ",
-                    "and has a lot more to offer than previous softwares. Here are some of my 3D / 2D Renders. I did not have any formal training and I am mostly self learned.",
+                    "and has a lot more to offer than previous softwares. Here are some of my 3D / 2D Renders. I did not have any formal training and I am mostly self learned.\n",
+                    "Note: ",
+                    "These images might appear low resolution due to internet compression"
                   ],
                   startWith: FlipFlopStart.Flop,
                 ))

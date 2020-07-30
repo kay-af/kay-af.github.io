@@ -37,13 +37,23 @@ class _PersonalWidgetState extends State<PersonalWidget> {
             BodySubhead(
               label: "Programming Skills",
             ),
+            Text(
+              "Click on a card to view details",
+              style: Theme.of(context).textTheme.caption,
+              textAlign: SwitcherMediaQuery.isPc(context)
+                  ? TextAlign.left
+                  : TextAlign.center,
+            ),
+            SizedBox(
+              height: 20,
+            ),
           ])),
           _buildSliverGrid(
             children: List<Widget>.generate(
                 Skill.languageProficiencyModels.length, (i) {
               return SkillView(
                 skill: Skill.languageProficiencyModels[i],
-                startDelay: Duration(milliseconds: 200 * i),
+                startDelay: Duration(milliseconds: 50 * i),
               );
             }),
           ),
@@ -51,14 +61,24 @@ class _PersonalWidgetState extends State<PersonalWidget> {
               delegate: SliverChildListDelegate([
             Divider(),
             BodySubhead(
-              label: "Software tools",
+              label: "Software tools / Frameworks",
+            ),
+            Text(
+              "Click on a card to view details",
+              style: Theme.of(context).textTheme.caption,
+              textAlign: SwitcherMediaQuery.isPc(context)
+                  ? TextAlign.left
+                  : TextAlign.center,
+            ),
+            SizedBox(
+              height: 20,
             ),
           ])),
           _buildSliverGrid(
               children: List<Widget>.generate(Skill.softwareTools.length, (i) {
             return SkillView(
               skill: Skill.softwareTools[i],
-              startDelay: Duration(milliseconds: 200 * i),
+              startDelay: Duration(milliseconds: 50 * i),
             );
           })),
           SliverList(
@@ -73,7 +93,7 @@ class _PersonalWidgetState extends State<PersonalWidget> {
                   List<Widget>.generate(Skill.languagesKnownModel.length, (i) {
             return SkillView(
               skill: Skill.languagesKnownModel[i],
-              startDelay: Duration(milliseconds: 200 * i),
+              startDelay: Duration(milliseconds: 50 * i),
               showDialogOnPress: false,
             );
           })),
@@ -88,7 +108,7 @@ class _PersonalWidgetState extends State<PersonalWidget> {
               children: List<Widget>.generate(Hobby.hobbies.length, (i) {
             return HobbyView(
               hobby: Hobby.hobbies[i],
-              animationDelay: Duration(milliseconds: i * 200),
+              animationDelay: Duration(milliseconds: i * 50),
             );
           })),
           SliverList(
@@ -181,10 +201,12 @@ class _PersonalWidgetState extends State<PersonalWidget> {
             childAspectRatio: SwitcherMediaQuery.isPc(context) ? 1.2 : 2.5,
             children: children)
         : SliverList(
-            delegate: SliverChildListDelegate(children.map((child) => Padding(
-              padding: const EdgeInsets.symmetric(vertical: 2.0),
-              child: child,
-            )).toList()),
+            delegate: SliverChildListDelegate(children
+                .map((child) => Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 2.0),
+                      child: child,
+                    ))
+                .toList()),
           );
   }
 }

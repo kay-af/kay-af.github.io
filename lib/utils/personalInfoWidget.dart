@@ -132,7 +132,7 @@ class _PersonalInfoWidgetState extends State<PersonalInfoWidget>
           duration: const Duration(milliseconds: 600),
           curve: Curves.easeOut,
           child: FlipFlopText(
-            textAlign: TextAlign.justify,
+            textAlign: TextAlign.left,
             textList: readingList,
             flipStyle: TextStyle(color: Colors.black),
             flopStyle: TextStyle(

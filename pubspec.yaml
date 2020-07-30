@@ -55,21 +55,21 @@ flutter:
     
     # Renders
     - assets/content/renders/render_ai_car.jpg
-    - assets/content/renders/render_alarm.png
-    - assets/content/renders/render_apple.png
-    - assets/content/renders/render_football.png
-    - assets/content/renders/render_guitar.png
-    - assets/content/renders/render_ipad.png
+    - assets/content/renders/render_alarm.jpg
+    - assets/content/renders/render_apple.jpg
+    - assets/content/renders/render_football.jpg
+    - assets/content/renders/render_guitar.jpg
+    - assets/content/renders/render_ipad.jpg
     - assets/content/renders/render_journey.jpg
-    - assets/content/renders/render_lantern.png
+    - assets/content/renders/render_lantern.jpg
     - assets/content/renders/render_piano.jpg
     - assets/content/renders/render_restaurant.jpg
-    - assets/content/renders/render_room.png
+    - assets/content/renders/render_room.jpg
 
     # WebApps
-    - assets/content/webapps/webapp_chat.png
-    - assets/content/webapps/webapp_spacehero.png
-    - assets/content/webapps/web_color_tools.png
+    - assets/content/webapps/webapp_chat.jpg
+    - assets/content/webapps/webapp_spacehero.jpg
+    - assets/content/webapps/web_color_tools.jpg
 
     # Softwares
     # AI Car
@@ -84,14 +84,14 @@ flutter:
     - assets/content/softwares/software_asphalt.pptx
     # Bot
     - assets/content/softwares/software_bot1.jpg
-    - assets/content/softwares/software_bot2.png
-    - assets/content/softwares/software_bot3.png
+    - assets/content/softwares/software_bot2.jpg
+    - assets/content/softwares/software_bot3.jpg
     - assets/content/softwares/software_bot_video.mp4
     # Uni
-    - assets/content/softwares/software_uni1.png
-    - assets/content/softwares/software_uni2.png
-    - assets/content/softwares/software_uni3.png
-    - assets/content/softwares/software_uni4.png
+    - assets/content/softwares/software_uni1.jpg
+    - assets/content/softwares/software_uni2.jpg
+    - assets/content/softwares/software_uni3.jpg
+    - assets/content/softwares/software_uni4.jpg
 
     # Mobiles
     - assets/content/mobileapps/mobile_notes_icon.png

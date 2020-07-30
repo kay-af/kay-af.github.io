@@ -109,17 +109,17 @@ class CreativeWork {
 
 class RenderPaths {
   static const String AI_CAR = "assets/content/renders/render_ai_car.jpg";
-  static const String ALARM = "assets/content/renders/render_alarm.png";
-  static const String APPLE = "assets/content/renders/render_apple.png";
-  static const String FOOTBALL = "assets/content/renders/render_football.png";
-  static const String GUITAR = "assets/content/renders/render_guitar.png";
-  static const String IPAD = "assets/content/renders/render_ipad.png";
+  static const String ALARM = "assets/content/renders/render_alarm.jpg";
+  static const String APPLE = "assets/content/renders/render_apple.jpg";
+  static const String FOOTBALL = "assets/content/renders/render_football.jpg";
+  static const String GUITAR = "assets/content/renders/render_guitar.jpg";
+  static const String IPAD = "assets/content/renders/render_ipad.jpg";
   static const String JOURNEY = "assets/content/renders/render_journey.jpg";
-  static const String LANTERN = "assets/content/renders/render_lantern.png";
+  static const String LANTERN = "assets/content/renders/render_lantern.jpg";
   static const String PIANO = "assets/content/renders/render_piano.jpg";
   static const String RESTAURANT =
       "assets/content/renders/render_restaurant.jpg";
-  static const String ROOM = "assets/content/renders/render_room.png";
+  static const String ROOM = "assets/content/renders/render_room.jpg";
 
   static List<Pair<String, Pair<int, int>>> gridWidgetData =
       <Pair<String, Pair<int, int>>>[
@@ -174,10 +174,10 @@ class RenderPaths {
 
 class WebAppPaths {
   static const String SPACE_HERO =
-      "assets/content/webapps/webapp_spacehero.png";
-  static const String CHAT = "assets/content/webapps/webapp_chat.png";
+      "assets/content/webapps/webapp_spacehero.jpg";
+  static const String CHAT = "assets/content/webapps/webapp_chat.jpg";
   static const String COLOR_TOOlS =
-      "assets/content/webapps/web_color_tools.png";
+      "assets/content/webapps/web_color_tools.jpg";
 }
 
 class WebAppModel {
@@ -549,7 +549,7 @@ class Hobby {
     Hobby(
         name: "Classical Music",
         description:
-            "I am a huge fan of classical music. My favourite artist is Franz Liszt and favourite piece is Liebestraum by him"),
+            "I am a huge fan of classical music. My favourite artist is Franz Liszt and favourite piece is Liebestraum by him."),
     Hobby(
         name: "Modern music",
         description:
@@ -559,17 +559,21 @@ class Hobby {
         description:
             "I am not very good at playing piano but I still want to learn to play Liebestraum some day"),
     Hobby(
-        name: "Programming",
+        name: "General Programming",
         description:
-            "Programming is more like an entertainment for me. It feels like I am playing videogames while I am programming"),
+            "Programming is more like an entertainment for me. I love programming and make random things and softwares. Whatever occupies my mind."),
+    Hobby(
+      name: "Competitive programming",
+      description: "The best way to brush up my logical thinking. I am a 3 star coder at Codechef and have been programming in Hacker earth and Leetcode as well",
+    ),
     Hobby(
         name: "Videogames",
         description:
-            "Ofcourse, The ultimate goal of my life is to be an awesome game developer"),
+            "I am great fan of Videogames mainly focussing stealth, action and RPG. Ofcourse, The ultimate goal of my life is to be an awesome game developer"),
     Hobby(
         name: "Digital arts and Drawing",
         description:
-            "Apart from digital arts, I like to do simple potraits too. I am not very good at it though"),
+            "Apart from digital arts, I like to do simple potraits too. I do it as a hobby"),
   ];
 }
 
@@ -583,42 +587,69 @@ class AboutMe {
 
   static final List<String> aboutMeDescriptive = [
     "Hello! My name is ",
-    "Afridi Kayal. ",
-    "I am currently pursuing my BTech. degree in computer science engineering from ",
-    "St. Thomas' College of Engineering & Technology.\n\n",
-    "I was born in ",
-    "Delhi ",
-    "while my family is originally from ",
-    "West Bengal. ",
-    "I studied in ",
-    "Rich Harvest Public School, Janak Puri, New Delhi ",
-    "till standard 5. My family moved to Kolkata back in ",
-    "2009 ",
-    "and I was transferred to ",
-    "St. Thomas' Boys' School.\n\n",
-    "I am a highly motivated student always keen to make new stuff. My programming journey started back in standard 8 when I started inspecting game mods and developed interest in game development. This interest led me to write my first game modification in a modding tool for ",
-    "GTA 3D Universe Games ",
-    "called ",
-    "Sanny Builder. ",
-    "I went on to make few mods but never persisited sadly. It was just for fun and I enjoyed it.\n\nBack in grade 9, I opted for ",
-    "Java ",
-    "and ofcourse, I regreted my choice in the beginning. Java was too different from the Sanny Builder that I was used to. Luckily, after struggling a bit and with the help of an awesome teacher of mine ",
-    "(I am still very grateful to her)",
-    ", I started understanding Java.\n\nMeanwhile, I started learning ",
-    "Unity 3D ",
+    "Afridi Kayal.",
+    "I am a BTech. student currently pursuing my degree. I like to do ",
+    "programming. ",
+    "I am also fond of ",
+    "Artwork ",
+    "specially ",
+    "Digital arts. ",
+    "I want to be a ",
+    "Game developer. ",
+    "I have always tried to understand game development and ended up learning various softwares like ",
+    "Unity, Gmax, Blender, Photoshop, ",
+    "etc. I have created many projects including few libraries and this portfolio displays most of them. \n\n I have worked in various environments including ",
+    "Android studio ",
     "and ",
-    "Blender 3D. ",
-    "Earlier, we did not have a proper internet access so it was quite difficult to get started. My only option was to go through the documentation and I must say that the Unity's official documentation is one of the best I have ever seen.\n\nAfter completing school, I had enough knowledge for making a big project in Unity using C#.\n\n",
-    "Chat Bot ",
-    "was that first big project. It was followed by ",
-    "Asphalt AI ",
-    "in second year of my college. Both softwares won my team prizes in inter college competitions.\n\nI followed the same path to learn frameworks like ",
     "Flutter ",
+    "for mobile. I created some basic mobile apps which can be downloaded from the ",
+    "Mobile Apps ",
+    "section.\n\n I have created a few basic backend servers in ",
+    "NodeJs (with Express). ",
+    "I also worked with ",
+    "Web sockets ",
+    "using ",
+    "Socket.io ",
+    "and have created a communication channel for ",
+    "Python ",
     "and ",
-    "Processing 3. ",
-    "Also different programming languages like ",
-    "Python, C, C++, etc. ",
-    "Youtube tutorials and articles on the internet helped me a lot in my self learning journey. For a detailed timeline of my achievements, refer to the bottom of the page."
+    "C# ",
+    "in ",
+    "Unity ",
+    "using ",
+    "Socket.io ",
+    "for a 3D project I did in my internship with ",
+    "ThinkXFactor. \n\n",
+    "Apart from ",
+    "C#, ",
+    "I also worked with few personal level projects in ",
+    "Java. ",
+    "In ",
+    "Java, ",
+    "I made a midi player, a binary serialization library and a lot of creative programs in ",
+    "Processing 3 ",
+    "which is based on ",
+    "Java. \n\n",
+    "I have completed quite big ",
+    "Unity 3D ",
+    "projects in the past. Take a look at softwares section for details of some. ",
+    "I am in an internship with ",
+    "ThinkXFactor ",
+    "where I am using Unity 3D to convert some 2D ML environments to 3D.\n\n",
+    "I developed interest in ",
+    "Digital arts ",
+    "back in school and tried small game engines like ",
+    "3D Rad and Game maker studio",
+    "before moving to ",
+    "Unity. ",
+    "I learned digital arts to make 3D assets for games and developed interest in 3D rendering. I started in ",
+    "Gmax (A free alternative to 3ds Max) ",
+    "and then moved to ",
+    "Blender 3D. ",
+    "I rendered a few pieces which can be found in Digital arts section.\n\nI developed interest in blogging too lately and thought it will be great if I shared my work in form of tutorial blogs. You can visit my blogging page through the ",
+    "blogs ",
+    "section.\n\n",
+    "Scroll down to view my hobbies, skills and a detailed timeline.",
   ];
 }
 
@@ -849,13 +880,13 @@ class SoftwarePaths {
       "assets/content/softwares/software_asphalt7.jpg";
   static const String BOT1 = "assets/content/softwares/software_bot1.jpg";
 
-  static const String BOT2 = "assets/content/softwares/software_bot2.png";
-  static const String BOT3 = "assets/content/softwares/software_bot3.png";
+  static const String BOT2 = "assets/content/softwares/software_bot2.jpg";
+  static const String BOT3 = "assets/content/softwares/software_bot3.jpg";
 
-  static const String UNI1 = "assets/content/softwares/software_uni1.png";
-  static const String UNI2 = "assets/content/softwares/software_uni2.png";
-  static const String UNI3 = "assets/content/softwares/software_uni3.png";
-  static const String UNI4 = "assets/content/softwares/software_uni4.png";
+  static const String UNI1 = "assets/content/softwares/software_uni1.jpg";
+  static const String UNI2 = "assets/content/softwares/software_uni2.jpg";
+  static const String UNI3 = "assets/content/softwares/software_uni3.jpg";
+  static const String UNI4 = "assets/content/softwares/software_uni4.jpg";
 
   static const String ASPHALT_PPTX =
       "assets/content/softwares/software_asphalt.pptx";
