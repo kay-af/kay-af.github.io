@@ -6,9 +6,9 @@ class HomeManager {
   int selectedPage;
   bool drawerExpanded;
 
-  HomeManager() : 
+  HomeManager({int selected = 0}) : 
     this.drawerScrollController = ScrollController(),
-    this.selectedPage = 0;
+    this.selectedPage = selected;
 
   void dispose() {
     drawerScrollController.dispose();

@@ -19,6 +19,9 @@ import 'package:portfolio/views/webapps/webapps.dart';
 
 class HomePage extends StatefulWidget {
   static const String ROUTE = "/home";
+  final int selected;
+
+  HomePage({this.selected = 0});
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -26,7 +29,13 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
-  HomeManager _manager = HomeManager();
+  HomeManager _manager;
+
+  @override
+  void initState() {
+    _manager = HomeManager(selected: widget.selected);
+    super.initState();
+  }
 
   @override
   void dispose() {
