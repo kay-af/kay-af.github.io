@@ -85,9 +85,10 @@ const RESOURCES = {
 "/icons\android-chrome-192x192.png": "950a8d86039dca33210ea23f5101f92c",
 "/icons\android-chrome-512x512.png": "b19f386046268628b8eeafb94a17ea9d",
 "/icons\apple-touch-icon.png": "549861ed8bde20f1737f2ee896c18abe",
-"/index.html": "58487513d482cbdb134f2063de7f3512",
+"/index.html": "0eb83728c9f493656faf53e398716e0a",
 "/main.dart.js": "d242a0807cc31bf8ff4cf34fd6ed497f",
-"/manifest.json": "438bab04726486cfc33e45403aac2cb4"
+"/manifest.json": "438bab04726486cfc33e45403aac2cb4",
+"/preview.jpg": "a2d3436d1101ed8642dda9d5c555cb6a"
 };
 
 self.addEventListener('activate', function (event) {
