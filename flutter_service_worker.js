@@ -88,7 +88,7 @@ const RESOURCES = {
 "/index.html": "0eb83728c9f493656faf53e398716e0a",
 "/main.dart.js": "d242a0807cc31bf8ff4cf34fd6ed497f",
 "/manifest.json": "438bab04726486cfc33e45403aac2cb4",
-"/preview.jpg": "a2d3436d1101ed8642dda9d5c555cb6a"
+"/preview.jpg": "87a552e7d3b40a6e05c708ffe7de1950"
 };
 
 self.addEventListener('activate', function (event) {
