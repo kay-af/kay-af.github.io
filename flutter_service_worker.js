@@ -86,7 +86,7 @@ const RESOURCES = {
 "/icons\android-chrome-512x512.png": "b19f386046268628b8eeafb94a17ea9d",
 "/icons\apple-touch-icon.png": "549861ed8bde20f1737f2ee896c18abe",
 "/index.html": "58487513d482cbdb134f2063de7f3512",
-"/main.dart.js": "36b666a8817be7522891692255bc57e5",
+"/main.dart.js": "d242a0807cc31bf8ff4cf34fd6ed497f",
 "/manifest.json": "438bab04726486cfc33e45403aac2cb4"
 };
 
